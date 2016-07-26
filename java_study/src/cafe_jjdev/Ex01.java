@@ -12,13 +12,13 @@ public class Ex01 {
 			scan = new Scanner(System.in);
 			num = scan.nextInt();
 			System.out.println("입력된 학생 번호 : " + num);
-			if(num<1 || num > 100){
+			if(num<1 || num > 100){//1~100이라는 범위 내 정수?
 				System.out.println("1~100까지의 정수만 입력하세요.");
 			}else{
-				if(num%10 == 0){
-					teamnum=(num/10 - 1)*10 + 1;
+				if(num%10 == 0){//10의 배수?
+					teamnum=(num/10 - 1)*10 + 1;//num/10은 10의 자리 숫자를 구하는 과정
 					System.out.println("해당 학생 팀장 번호 : " + teamnum);
-				}else{
+				}else{//그 외
 					teamnum=num/10*10 + 1;
 					System.out.println("해당 학생 팀장 번호 : " + teamnum);
 				}
@@ -27,7 +27,7 @@ public class Ex01 {
 				 	이 경우 조건문을 둘 필요없이 활용 가능. */
 			}
 		}catch(Exception ex){
-			System.out.println("1~100 사이의 정수만 입력하셔야 합니다.");
+			System.out.println("1~100 사이의 정수만 입력하셔야 합니다.");//예외 사항 발생할 시 멘트 출력
 		}finally{
 			if(scan != null) try{scan.close();} catch(Exception ex){}
 		}

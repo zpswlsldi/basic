@@ -19,13 +19,11 @@ public class Ex04 {
 				}else{
 					System.out.println("출입금지");
 				}
-			}else if(num1 <= 0 || num2 <= 0){
-				System.out.println("음수는 입력하실 수 없습니다.");
 			}else{
 				System.out.println("출입금지");
 			}
 		}catch(Exception ex){
-			System.out.println("숫자만 입력하십시오.");
+			System.out.println("숫자만 입력하십시오.");//예외 사항 발생 시 멘트 출력
 		}finally{
 			if(scan != null) try{scan.close();} catch(Exception ex){}
 		}

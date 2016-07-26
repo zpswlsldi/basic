@@ -7,7 +7,7 @@ public class Ex11 {
 			for(int j=1; j<=9; j++){//구구단에서 한 단의 개수
 				System.out.print(i+"*"+j+"="+i*j+" ");
 			}
-			System.out.println("");
+			System.out.println("");//System.out.print("\n");
 		}
 
 	}
