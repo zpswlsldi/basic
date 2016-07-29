@@ -59,6 +59,8 @@ public class Ban {
 			Student s = this.list.get(i);
 			if(name.equals(s.name)){
 				this.list.remove(i);
+				/*	boolean 변수 선언 및 초기화 후 이 조건일 때 변수 값을 달리 한다.
+				 	이후 boolean 변수에 담긴 값에 따라 오류문구나 성공문구 출력. flag?	*/
 			}
 		}
 	}
