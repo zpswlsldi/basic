@@ -26,12 +26,12 @@ public class Ban {
 	}
 	// 학생 데이터 입력 메서드(이름, 나이, 취업여부만 입력해서 주소값을 리턴받고자 할 때)
 	Student studentMemberInsert(String name, int age, boolean work){
-		Student s = new Student();
+		Student s = new Student();//리턴값이 있다는 건 변수에 값을 넣는다던지 하는 목적이 있다는 것.
 		s.name = name;
 		s.age = age;
 		s.work = work;
 		/*	아래 메서드와 연동하는 '주소값 리턴 후 변수를 list에 추가하는 방식'인데, 
-			그런 번거로움 없이 '리턴값 없이 바로 list에 추가하는 방식'도 생각할 수 있다.*/  
+			'리턴값 없이 바로 list에 추가하는 방식'도 생각할 수 있다.*/  
 		return s;
 	}
 	// 데이터 입력, 입력된 데이터를 list에 추가하는 메서드
